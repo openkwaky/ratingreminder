@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp" 
+    android:gravity="top">
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/rating_screenshot"
+    android:layout_alignParentRight="true" 
+    />
+
+<View 
+    android:layout_width="220dp"
+    android:layout_height="wrap_content"
+    android:layout_alignTop="@+id/askRatingText"
+    android:layout_alignBottom="@+id/askRatingText"
+    android:layout_alignLeft="@+id/askRatingText"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="-5dp"
+    android:background="@color/shadow"
+    />
+
+<TextView 
+    android:id="@+id/askRatingText"
+    android:layout_width="220dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_marginTop="120dp"
+    android:text="@string/rating_ask"
+    android:padding="10dp"
+    android:singleLine="false"
+    android:background="@color/bg_text"
+    />
+</RelativeLayout>
