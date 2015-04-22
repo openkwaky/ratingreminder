@@ -38,7 +38,7 @@ in a `FragmentActivity` (required) :
 RatingReminder reminder = new RatingReminder(this);
 reminder.setAppName(getString(R.string.app_name));
 reminder.process();
-
+```
 
 ### Advanced integration Example
 
@@ -59,7 +59,7 @@ storeTypes.add(StoreType.YANDEX_STORE);
 reminder.setStoreTypes(storeTypes);
 
 reminder.process();
-
+```
 
 ### Options details
 
