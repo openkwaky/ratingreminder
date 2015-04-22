@@ -195,16 +195,18 @@ public class RatingReminder {
      * <p>
      * There are 3 algorithm :<br>
      * <ul>
-     * <li><code>AlgoType.NO_GAP_ALGO</code> this algo returns always true, see
-     * <code>NoGapAlgo</code> class</li>
+     * <li><code>AlgoType.NO_GAP_ALGO</code> this algo returns always true</li>
      * <li><code>AlgoType.REGULAR_ALGO</code> this algo returns true each time
-     * the app started a number of times equals to "gap", see
-     * <code>RegularAlgo</code> class</li>
+     * the app started a number of times equals to "gap"</li>
      * <li><code>AlgoType.DOUBLE_GAP_ALGO</code> this algo returns true each
      * time the app started a number of times equals to "gap", "gap" being
-     * multiplied by 2 at each hit, see <code>DoubleGapAlgo</code> class</li>
+     * multiplied by 2 at each hit</li>
      * </ul>
-     * 
+     *
+     * @see net.equasoft.ratingreminder.algo.NoGapAlgo
+     * @see net.equasoft.ratingreminder.algo.RegularAlgo
+     * @see net.equasoft.ratingreminder.algo.DoubleGapAlgo
+     *
      * @param algoType
      */
     public void setAlgoType(AlgoType algoType) {
