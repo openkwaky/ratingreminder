@@ -1,4 +1,4 @@
-# Rating Reminder : An Android Library dedicated to encourage users to rate/comment your app
+# Rating Reminder lib : encourage users to rate/comment your Android app
 
 ## Introduction
 
@@ -29,7 +29,7 @@ or incrementally (gap is doubled each time the dialog is shown) until user accep
 Put this line in your *build.gradle* file in the *dependency* section:
 
 ```groovy
-    compile 'net.equasoft.ratingreminder:library:1.5'
+compile 'net.equasoft.ratingreminder:library:1.5'
 ```
 
 
