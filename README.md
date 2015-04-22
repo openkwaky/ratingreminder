@@ -23,9 +23,9 @@ or incrementally (gap is doubled each time the dialog is shown) until user accep
 
 ## Screenshots
 
-![basic dialog](https://github.com/openkwaky/ratingreminder/pics/mini_basic_dialog.png)
-![image dialog](https://github.com/openkwaky/ratingreminder/pics/mini_image_dialog.png)
-![appstore selection](https://github.com/openkwaky/ratingreminder/pics/mini_appstore_selection.png)
+![basic dialog](https://github.com/openkwaky/ratingreminder/blob/master/pics/mini_basic_dialog.png)
+![image dialog](https://github.com/openkwaky/ratingreminder/blob/master/pics/mini_image_dialog.png)
+![appstore selection](https://github.com/openkwaky/ratingreminder/blob/master/pics/mini_appstore_selection.png)
 
 
 ##Integration
