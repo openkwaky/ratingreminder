@@ -20,12 +20,17 @@ or incrementally (gap is doubled each time the dialog is shown) until user accep
   * Customizable
   * Opensource : use, share for free under **Apache License 2.0** and contribute !
 
-
-## Screenshots
-
 ![basic dialog](https://github.com/openkwaky/ratingreminder/blob/master/pics/mini_basic_dialog.png)
 ![image dialog](https://github.com/openkwaky/ratingreminder/blob/master/pics/mini_image_dialog.png)
 ![appstore selection](https://github.com/openkwaky/ratingreminder/blob/master/pics/mini_appstore_selection.png)
+
+##Installation
+
+Put this line in your *build.gradle* file in the *dependency* section:
+
+```groovy
+    compile 'net.equasoft.ratingreminder:library:1.5'
+```
 
 
 ##Integration
