@@ -23,9 +23,9 @@ or incrementally (gap is doubled each time the dialog is shown) until user accep
 
 ## Screenshots
 
-![alt text](https://github.com/openkwaky/ratingreminder/mini_basic_dialog.png basic dialog)
-![alt text](https://github.com/openkwaky/ratingreminder/mini_image_dialog.png image dialog)
-![alt text](https://github.com/openkwaky/ratingreminder/mini_appstore_selection.png appstore selection)
+![basic dialog](https://github.com/openkwaky/ratingreminder/pics/mini_basic_dialog.png)
+![image dialog](https://github.com/openkwaky/ratingreminder/pics/mini_image_dialog.png)
+![appstore selection](https://github.com/openkwaky/ratingreminder/pics/mini_appstore_selection.png)
 
 
 ##Integration
@@ -74,11 +74,11 @@ reminder.process();
 
 ### They are using it !
 
-[https://play.google.com/store/apps/details?id=com.p3authentication P3 AppLocker]
+[P3 Free Secure Applocker](https://play.google.com/store/apps/details?id=com.p3authentication)
 
 
 ### Referenced by
 
-  * [https://android-arsenal.com/details/1/397 https://img.shields.io/badge/Android%20Arsenal-Rating%20Reminder-brightgreen.svg?style=flat]
-  * [http://android-libs.com/lib/rating-reminder Android-libs]
-  * [http://androidcustomviews.com/rating-reminder/ Android Custom Views]
+  * [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Rating%20Reminder-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/397)
+  * [Android-libs](http://android-libs.com/lib/rating-reminder)
+  * [Android Custom Views](http://androidcustomviews.com/rating-reminder/)
