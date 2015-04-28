@@ -36,9 +36,7 @@ And add the *jcenter* repository if it is not yet declared:
 
 ```groovy
 repositories {
-    repositories {
-        jcenter()
-    }
+    jcenter()
 }
 ```
 
