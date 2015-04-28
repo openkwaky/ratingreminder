@@ -32,6 +32,16 @@ Put this line in your *build.gradle* file in the *dependency* section:
 compile 'net.equasoft.ratingreminder:library:1.5'
 ```
 
+And add the *jcenter* repository if it is not yet declared:
+
+```groovy
+repositories {
+    repositories {
+        jcenter()
+    }
+}
+```
+
 
 ##Integration
 
