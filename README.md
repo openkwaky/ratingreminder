@@ -20,6 +20,8 @@ or incrementally (gap is doubled each time the dialog is shown) until user accep
   * Customizable
   * Opensource : use, share for free under **Apache License 2.0** and contribute !
 
+Follow me on twitter [@openkwaky](https://twitter.com/openkwaky)
+
 ![basic dialog](https://github.com/openkwaky/ratingreminder/blob/master/pics/mini_basic_dialog.png)
 ![image dialog](https://github.com/openkwaky/ratingreminder/blob/master/pics/mini_image_dialog.png)
 ![appstore selection](https://github.com/openkwaky/ratingreminder/blob/master/pics/mini_appstore_selection.png)
@@ -99,7 +101,7 @@ reminder.process();
 ## License
 
 ```
-Copyright 2015 Openkwaky Equasoft
+Copyright 2015 Openkwaky (Equasoft)
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
