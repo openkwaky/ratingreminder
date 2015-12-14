@@ -23,5 +23,10 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.1.1'
+
+    // from project sources :
     compile project (':library')
+
+    // from maven repository
+    // compile 'net.equasoft.ratingreminder:library:1.+'
 }

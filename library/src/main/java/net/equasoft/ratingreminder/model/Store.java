@@ -101,8 +101,7 @@ public class Store {
             break;
         }
 
-//        setInstalled(isPackageInstalled(mContext, getPkg()));
-        setInstalled(true);
+        setInstalled(isPackageInstalled(mContext, getPkg()));
     }
 
     public StoreType getType() {
