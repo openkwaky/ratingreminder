@@ -96,8 +96,6 @@ reminder.process();
 ## Referenced by
 
   * [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Rating%20Reminder-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/397)
-  * [Android-libs](http://android-libs.com/lib/rating-reminder)
-  * [Android Custom Views](http://androidcustomviews.com/rating-reminder/)
 
 ## License
 
