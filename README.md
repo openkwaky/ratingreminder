@@ -12,7 +12,8 @@ This library facilitates this task, and can be configured to display an alert di
 or incrementally (gap is doubled each time the dialog is shown) until user accepts to put a comment.
 
 
-  * *New:* Rating Reminder on github, now installable by **gradle**
+  * *New:* Demo app in source code illustrating lib integration, see [/app](https://github.com/openkwaky/ratingreminder/blob/master/app) directory
+  * Now installable by **gradle**
   * Russian appstore **Yandex** support added. Alert dialogs have now 3 buttons, "No thanks" button added.
   * Multiple appstores support added for **Google Playstore**, **Amazon App-Shop** and **Kurio Store**. Build once, distribute on all !!
   * Easy and fast integration
