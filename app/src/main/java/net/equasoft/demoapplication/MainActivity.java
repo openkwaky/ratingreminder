@@ -17,14 +17,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Init RatingReminder object
+        // Initialize RatingReminder object
         RatingReminder reminder = new RatingReminder(this);
         // Give a name that will be used in dialogs for your app
         reminder.setAppName(getString(R.string.app_name));
-        //Select an algo, NO_GAP_ALOG triggers every time
-        reminder.setAlgoType(AlgoType.NO_GAP_ALGO);
-        // Select a dialog type, basic dialog uses default system display
-        reminder.setDialogType(RatingDialogType.BASIC_DIALOG);
+        //Select an algo
+        reminder.setAlgoType(AlgoType.NO_GAP_ALGO); // NO_GAP_ALOG triggers every time
+        // Select a dialog type
+        reminder.setDialogType(RatingDialogType.BASIC_DIALOG); // basic dialog uses default system display
 
         // Configure a store
         ArrayList<StoreType> storeTypes = new ArrayList<>();
