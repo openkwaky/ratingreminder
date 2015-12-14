@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="shadow">#616161</color>
-    <color name="bg_text">#efefef</color>
-    
+    <color name="bg_text">#bfc9ff</color>
+    <color name="store_text">#616161</color>
+
 </resources>

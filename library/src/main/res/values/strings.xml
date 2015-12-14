@@ -4,10 +4,10 @@
     
     <string name="rating_ask_image_title">Rate this app</string>
     <string name="rating_ask_basic_title">Rate this app</string>
-    <string name="rating_ask">Do you like \"%1s\" ?\nPlease put a comment and a rating on the appstore.\nThank you for your support !</string>
+    <string name="rating_ask">You like %1s ?\nPlease write a comment and a rating on the appstore</string>
     <string name="rating_image_ok">Rate now</string>
     <string name="rating_basic_ok">Rate now</string>
-    <string name="rating_later">Remind later</string>
+    <string name="rating_later">Later</string>
     <string name="rating_no">No thanks</string>
     <string name="rating_store_not_found">This appstore is not available on this device</string>
     <string name="rating_store_selection_title">Select an appstore</string>
