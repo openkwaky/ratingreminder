@@ -1,4 +1,4 @@
-package net.equasoft.testapplication;
+package net.equasoft.demoapplication;
 
 import org.junit.Test;
 

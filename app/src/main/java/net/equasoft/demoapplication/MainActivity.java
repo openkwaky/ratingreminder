@@ -1,4 +1,4 @@
-package net.equasoft.testapplication;
+package net.equasoft.demoapplication;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
