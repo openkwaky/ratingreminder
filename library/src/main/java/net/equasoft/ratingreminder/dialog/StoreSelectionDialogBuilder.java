@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import net.equasoft.ratingreminder.R;
+import net.equasoft.ratingreminder.factory.StoreFactory;
 import net.equasoft.ratingreminder.io.PrefsTools;
 import net.equasoft.ratingreminder.model.Store;
 import android.app.Activity;
@@ -46,7 +47,7 @@ public class StoreSelectionDialogBuilder extends AlertDialog.Builder {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 PrefsTools.setBool(mActivity, PrefsTools.PREFS_RATED, true);
-                stores.get(which).goRating(mActivity);
+                StoreFactory.goRating(mActivity, stores.get(which));
                 dialog.dismiss();
             }
         });

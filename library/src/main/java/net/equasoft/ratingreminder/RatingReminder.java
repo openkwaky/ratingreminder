@@ -7,6 +7,7 @@ import net.equasoft.ratingreminder.algo.IAlgo;
 import net.equasoft.ratingreminder.algo.NoGapAlgo;
 import net.equasoft.ratingreminder.algo.RegularAlgo;
 import net.equasoft.ratingreminder.dialog.StoreSelectionDialogBuilder;
+import net.equasoft.ratingreminder.factory.StoreFactory;
 import net.equasoft.ratingreminder.fragment.AskingDialogFragment;
 import net.equasoft.ratingreminder.fragment.AskingDialogFragment.OnRating;
 import net.equasoft.ratingreminder.io.PrefsTools;
@@ -64,11 +65,11 @@ public class RatingReminder {
     private void initStores() {
         stores.clear();
         for (StoreType _t : storeTypes) {
-            addToStoresList(new Store(mActivity, _t));
+            addToStoresList(StoreFactory.buildStore(mActivity, _t));
         }
 
         if (stores.size() == 0) {
-            stores.add(new Store(mActivity, StoreType.GOOGLE_PLAYSTORE));
+            stores.add(StoreFactory.buildStore(mActivity, StoreType.GOOGLE_PLAYSTORE));
         }
     }
 
@@ -116,7 +117,7 @@ public class RatingReminder {
             public void OnRatingOk() {
                 if (stores.size() == 1) {
                     PrefsTools.setBool(mActivity, PrefsTools.PREFS_RATED, true);
-                    stores.get(0).goRating(mActivity);
+                    StoreFactory.goRating(mActivity, stores.get(0));
                 } else {
                     showStoreSelectionDialogFragment();
                 }

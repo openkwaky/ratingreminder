@@ -5,7 +5,7 @@ android {
     buildToolsVersion "23.0.1"
 
     defaultConfig {
-        applicationId "net.equasoft.testapplication"
+        applicationId "net.equasoft.demoapplication"
         minSdkVersion 16
         targetSdkVersion 23
         versionCode 1
