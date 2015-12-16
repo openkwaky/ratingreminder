@@ -28,8 +28,8 @@ public class StoreFactory {
     public static final String STORE_YANDEX_URL = "yastore://details?id=";
 
     /**
-     * Build a new Store instance using parameters Test if the specified store
-     * is installed on the device
+     * Build a new Store instance using parameters
+     * Test if the specified store is installed on the device
      *
      * @param type StoreType Enum value
      */

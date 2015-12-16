@@ -4,12 +4,12 @@ import net.equasoft.ratingreminder.type.StoreType;
 
 public class Store {
 
-    StoreType type;
-    boolean installed;
-    String pkg;
-    String url;
-    int titleStringId;
-    int logoId;
+    private StoreType type;
+    private boolean installed;
+    private String pkg;
+    private String url;
+    private int titleStringId;
+    private int logoId;
 
     public StoreType getType() {
         return type;
