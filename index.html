@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Ratingreminder : Rating Reminder lib : encourage users to rate/comment your Android app">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Ratingreminder</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/openkwaky/ratingreminder">View on GitHub</a>
+
+          <h1 id="project_title">Ratingreminder</h1>
+          <h2 id="project_tagline">Rating Reminder lib : encourage users to rate/comment your Android app</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/openkwaky/ratingreminder/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/openkwaky/ratingreminder/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="rating-reminder-lib--encourage-users-to-ratecomment-your-android-app" class="anchor" href="#rating-reminder-lib--encourage-users-to-ratecomment-your-android-app" aria-hidden="true"><span class="octicon octicon-link"></span></a>Rating Reminder lib : encourage users to rate/comment your Android app</h1>
+
+<h2>
+<a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction</h2>
+
+<p>Android apps ranking on Google Playstore and others Android appstores is using ratings and comments from users. </p>
+
+<p>To get well ranked, an app needs a lot of comments and (good) ratings. The best way to achieve this is to ask 
+users to put a comment on the appstore app's page.</p>
+
+<p>This library facilitates this task, and can be configured to display an alert dialog periodically (each "gap" calls)
+or incrementally (gap is doubled each time the dialog is shown) until user accepts to put a comment.</p>
+
+<ul>
+<li>
+<em>New:</em> Demo app in source code illustrating lib integration, see <a href="https://github.com/openkwaky/ratingreminder/blob/master/app">/app</a> directory</li>
+<li>Now installable by <strong>gradle</strong>
+</li>
+<li>Russian appstore <strong>Yandex</strong> support added. Alert dialogs have now 3 buttons, "No thanks" button added.</li>
+<li>Multiple appstores support added for <strong>Google Playstore</strong>, <strong>Amazon App-Shop</strong> and <strong>Kurio Store</strong>. Build once, distribute on all !!</li>
+<li>Easy and fast integration</li>
+<li>A lot of facultative options</li>
+<li>Customizable</li>
+<li>Opensource : use, share for free under <strong>Apache License 2.0</strong> and contribute !</li>
+</ul>
+
+<p>Follow me on twitter <a href="https://twitter.com/openkwaky">@openkwaky</a></p>
+
+<p><img src="https://github.com/openkwaky/ratingreminder/blob/master/pics/mini_basic_dialog.png" alt="basic dialog">
+<img src="https://github.com/openkwaky/ratingreminder/blob/master/pics/mini_image_dialog.png" alt="image dialog">
+<img src="https://github.com/openkwaky/ratingreminder/blob/master/pics/mini_appstore_selection.png" alt="appstore selection"></p>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>Put this line in your <em>build.gradle</em> file in the <em>dependency</em> section:</p>
+
+<div class="highlight highlight-source-groovy"><pre>compile <span class="pl-s"><span class="pl-pds">'</span>net.equasoft.ratingreminder:library:1.+<span class="pl-pds">'</span></span></pre></div>
+
+<p>And add the <em>jcenter</em> repository if it is not yet declared:</p>
+
+<div class="highlight highlight-source-groovy"><pre>repositories {
+    jcenter()
+}</pre></div>
+
+<h2>
+<a id="integration" class="anchor" href="#integration" aria-hidden="true"><span class="octicon octicon-link"></span></a>Integration</h2>
+
+<h3>
+<a id="basic-integration-example" class="anchor" href="#basic-integration-example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Basic integration Example</h3>
+
+<p>in a <code>FragmentActivity</code> (required) :</p>
+
+<div class="highlight highlight-source-java"><pre><span class="pl-smi">RatingReminder</span> reminder <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">RatingReminder</span>(<span class="pl-v">this</span>);
+reminder<span class="pl-k">.</span>setAppName(getString(<span class="pl-smi">R</span><span class="pl-k">.</span>string<span class="pl-k">.</span>app_name));
+reminder<span class="pl-k">.</span>process();</pre></div>
+
+<h3>
+<a id="advanced-integration-example" class="anchor" href="#advanced-integration-example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Advanced integration Example</h3>
+
+<p>in a <code>FragmentActivity</code> (required) :</p>
+
+<div class="highlight highlight-source-java"><pre><span class="pl-smi">RatingReminder</span> reminder <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">RatingReminder</span>(<span class="pl-v">this</span>);
+reminder<span class="pl-k">.</span>setAppName(getString(<span class="pl-smi">R</span><span class="pl-k">.</span>string<span class="pl-k">.</span>app_name));
+reminder<span class="pl-k">.</span>setAlgoType(<span class="pl-smi">AlgoType</span><span class="pl-c1"><span class="pl-k">.</span>REGULAR_ALGO</span>);
+reminder<span class="pl-k">.</span>setDialogType(<span class="pl-smi">RatingDialogType</span><span class="pl-c1"><span class="pl-k">.</span>IMAGE_DIALOG</span>);
+reminder<span class="pl-k">.</span>setGap(<span class="pl-c1">4</span>);
+
+<span class="pl-k">ArrayList&lt;<span class="pl-smi">StoreType</span>&gt;</span> storeTypes <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-k">ArrayList&lt;<span class="pl-smi">StoreType</span>&gt;</span>();
+storeTypes<span class="pl-k">.</span>add(<span class="pl-smi">StoreType</span><span class="pl-c1"><span class="pl-k">.</span>GOOGLE_PLAYSTORE</span>);
+storeTypes<span class="pl-k">.</span>add(<span class="pl-smi">StoreType</span><span class="pl-c1"><span class="pl-k">.</span>AMAZON_STORE</span>);
+storeTypes<span class="pl-k">.</span>add(<span class="pl-smi">StoreType</span><span class="pl-c1"><span class="pl-k">.</span>KURIO_STORE</span>);
+storeTypes<span class="pl-k">.</span>add(<span class="pl-smi">StoreType</span><span class="pl-c1"><span class="pl-k">.</span>YANDEX_STORE</span>);
+reminder<span class="pl-k">.</span>setStoreTypes(storeTypes);
+
+reminder<span class="pl-k">.</span>process();</pre></div>
+
+<h3>
+<a id="options-details" class="anchor" href="#options-details" aria-hidden="true"><span class="octicon octicon-link"></span></a>Options details</h3>
+
+<ul>
+<li>Constructor <code>RatingReminder(FragmentActivity)</code> <em>required</em>
+</li>
+<li>
+<code>setAppName(String)</code> : Specify the name of the app to be displayed in the dialog <em>required</em>
+</li>
+<li>
+<code>setAlgoType(AlgoType)</code> : Specify a pre-defined algorithm that will decide to trigger or not the alert dialog each time RatingReminder is executed <em>facultative</em> - default <code>AlgoType.DOUBLE_GAP_ALGO</code>
+</li>
+<li>
+<code>setDialogType(RatingDialogType)</code> : Specify a pre-defined dialog display <em>facultative</em> - default <code>BASIC_DIALOG</code>
+</li>
+<li>
+<code>setGap(int)</code> : This method sets the field "gap" an int value that is used by the chosen algo to trigger a dialog display <em>facultative</em> - default <code>3</code>
+</li>
+<li>
+<code>setStoreTypes(ArrayList&lt;StoreType&gt;)</code> : This method sets the appstores where the app is configured and available. The lib detects if each appstore is installed and displays only installed appstores <em>facultative</em> - default <code>StoreType.GOOGLE_PLAYSTORE</code>
+</li>
+<li>
+<code>process()</code> : using algo and number of times this method has been called, it will display or not an alert dialog <em>required</em>
+</li>
+</ul>
+
+<h2>
+<a id="they-are-using-it-" class="anchor" href="#they-are-using-it-" aria-hidden="true"><span class="octicon octicon-link"></span></a>They are using it !</h2>
+
+<p><a href="https://play.google.com/store/apps/details?id=com.p3authentication">P3 Free Secure Applocker</a></p>
+
+<h2>
+<a id="referenced-by" class="anchor" href="#referenced-by" aria-hidden="true"><span class="octicon octicon-link"></span></a>Referenced by</h2>
+
+<ul>
+<li><a href="https://android-arsenal.com/details/1/397"><img src="https://img.shields.io/badge/Android%20Arsenal-Rating%20Reminder-brightgreen.svg?style=flat" alt="Android Arsenal"></a></li>
+</ul>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+
+<pre><code>Copyright 2015 Openkwaky (Equasoft)
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+</code></pre>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Ratingreminder maintained by <a href="https://github.com/openkwaky">openkwaky</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
