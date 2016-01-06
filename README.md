@@ -92,10 +92,11 @@ reminder.process();
 
 [P3 Free Secure Applocker](https://play.google.com/store/apps/details?id=com.p3authentication)
 
+[Radio France Podcast](https://play.google.com/store/apps/details?id=fr.radiofrance.rfpodcasts)
 
 ## Referenced by
 
-  * [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Rating%20Reminder-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/397)
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Rating%20Reminder-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/397)
 
 ## License
 
