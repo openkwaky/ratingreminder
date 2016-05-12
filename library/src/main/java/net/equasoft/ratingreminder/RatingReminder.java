@@ -111,6 +111,7 @@ public class RatingReminder {
         AskingDialogFragment dialogFragment = new AskingDialogFragment();
         dialogFragment.setAppName(appName);
         dialogFragment.setDialogType(dialogType);
+        dialogFragment.setRetainInstance(true);
         dialogFragment.setOnRating(new OnRating() {
 
             @Override
