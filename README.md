@@ -29,6 +29,8 @@ Follow me on twitter [@openkwaky](https://twitter.com/openkwaky)
 
 ##Installation
 
+[ ![Download](https://api.bintray.com/packages/openkwaky/maven/net.equasoft.ratingreminder/images/download.svg) ](https://bintray.com/openkwaky/maven/net.equasoft.ratingreminder/_latestVersion)
+
 Put this line in your *build.gradle* file in the *dependency* section:
 
 ```groovy
