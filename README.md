@@ -27,7 +27,7 @@ Follow me on twitter [@openkwaky](https://twitter.com/openkwaky)
 ![image dialog](https://github.com/openkwaky/ratingreminder/blob/master/pics/mini_image_dialog.png)
 ![appstore selection](https://github.com/openkwaky/ratingreminder/blob/master/pics/mini_appstore_selection.png)
 
-##Installation
+## Installation
 
 [ ![Download](https://api.bintray.com/packages/openkwaky/maven/net.equasoft.ratingreminder/images/download.svg) ](https://bintray.com/openkwaky/maven/net.equasoft.ratingreminder/_latestVersion)
 
@@ -46,9 +46,9 @@ repositories {
 ```
 
 
-##Integration
+## Integration
 
-###Basic integration Example
+### Basic integration Example
 
 in a `FragmentActivity` (required) :
 
